@@ -1,4 +1,18 @@
-﻿public enum PizzaType
+﻿// The Abstract Factory Pattern is a creational design pattern that provides an interface for creating families of related or dependent objects without specifying their concrete classes. Here are the key terminologies:
+
+// Abstract Factory: This is an interface that declares a set of methods for creating abstract products. In your code, IPizzaIngredientFactory would be considered the abstract factory.
+
+// Concrete Factory: These are classes that implement the abstract factory's methods to create concrete products. In your code, a concrete factory would be a specific implementation of IPizzaIngredientFactory.
+
+// Abstract Product: This is an interface for a type of product objects. In your code, Pizza is an abstract product.
+
+// Concrete Product: These are various implementations of the abstract product interface. In your code, CheesePizza is a concrete product.
+
+// Client: This is a class that uses the factory to create objects. The client only interacts with the abstract factory and abstract product interfaces, so it can work with any concrete factories and products. In your code, a client would be a class that uses IPizzaIngredientFactory to create Pizza objects.
+
+// Here the Abstract Factory is IPizzaIngredientFactory and the Concrete Factories are DominoIngredientFactory and PizzaHutIngredientFactory. The Abstract Product is Pizza and the Concrete Products are CheesePizza and PepperoniPizza. The Client is Program class.
+
+public enum PizzaType
 {
     Cheese,
     Pepperoni
