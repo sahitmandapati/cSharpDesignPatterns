@@ -4,7 +4,7 @@
     Pepperoni
 }
 
-public abstract class Pizza
+public class Pizza
 {    
     protected string Name { get; set; }
     protected string Dough { get; set; }
